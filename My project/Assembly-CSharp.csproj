@@ -60,6 +60,7 @@
     <Compile Include="Assets\Scripts\Door.cs" />
     <Compile Include="Assets\Scripts\Actions\TryOpenDoorActionTask.cs" />
     <Compile Include="Assets\Scripts\Conditions\isDoorOpenConditionTask.cs" />
+    <Compile Include="Assets\Scripts\LockedDoor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

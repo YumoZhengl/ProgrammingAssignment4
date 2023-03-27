@@ -360,6 +360,7 @@
 "Assets/Scripts/Actions/TryOpenDoorActionTask.cs"
 "Assets/Scripts/Conditions/isDoorOpenConditionTask.cs"
 "Assets/Scripts/Door.cs"
+"Assets/Scripts/LockedDoor.cs"
 -langversion:9.0
 
 /deterministic

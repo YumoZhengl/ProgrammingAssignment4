@@ -10,7 +10,7 @@ public class Door : MonoBehaviour
     public Transform exitPoint;
     public Transform approachPoint;
 
-    public void TryOpen()
+    public virtual void TryOpen()
     {
         if (isOpen)
         {

@@ -220,6 +220,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 239154000}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &429558087 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3760392285777390063, guid: ac0133d3c0339ad4db55ec1618b0cb55, type: 3}
+  m_PrefabInstance: {fileID: 5062705883833684363}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &584988433
 GameObject:
   m_ObjectHideFlags: 0
@@ -360,6 +365,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &883947367 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2660797141892605203, guid: ac0133d3c0339ad4db55ec1618b0cb55, type: 3}
+  m_PrefabInstance: {fileID: 5062705883833684363}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1004118969
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -845,6 +855,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2382743194373604211, guid: ac0133d3c0339ad4db55ec1618b0cb55, type: 3}
   m_PrefabInstance: {fileID: 1384106109}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1413696179 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1169959549056374002, guid: ac0133d3c0339ad4db55ec1618b0cb55, type: 3}
+  m_PrefabInstance: {fileID: 5062705883833684363}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1452318935
 GameObject:
   m_ObjectHideFlags: 0
@@ -1009,25 +1024,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _serializedExposedParameters: []
-  _boundGraphSerialization: '{"type":"NodeCanvas.BehaviourTrees.BehaviourTree","nodes":[{"_position":{"x":445.0,"y":248.0},"$type":"NodeCanvas.BehaviourTrees.Selector","$id":"0"},{"_tag":"","_position":{"x":233.0511,"y":372.8345},"_comment":"try
-    to find a door","$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"1"},{"_condition":{"variable":{"_name":"currentDoor","_targetVariableID":"9bdef99a-a589-4b30-983d-b0fbb53f2de2"},"$type":"NodeCanvas.Tasks.Conditions.CheckNull"},"_position":{"x":62.0511,"y":496.8345},"_comment":"do
-    we have a door","$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"2"},{"_action":{"$type":"NodeCanvas.Tasks.Actions.SetCurrentDoorActionTask"},"_position":{"x":174.0511,"y":587.8345},"_comment":"find
-    a door","$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"3"},{"_position":{"x":410.0511,"y":373.8345},"_comment":"approaching
+  _boundGraphSerialization: '{"type":"NodeCanvas.BehaviourTrees.BehaviourTree","nodes":[{"_position":{"x":445.0,"y":248.0},"$type":"NodeCanvas.BehaviourTrees.Selector","$id":"0"},{"_tag":"","_position":{"x":-19.05672,"y":485.2025},"_comment":"try
+    to find a door","$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"1"},{"_condition":{"variable":{"_name":"currentDoor","_targetVariableID":"9bdef99a-a589-4b30-983d-b0fbb53f2de2"},"$type":"NodeCanvas.Tasks.Conditions.CheckNull"},"_position":{"x":-199.0567,"y":620.2026},"_comment":"do
+    we have a door","$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"2"},{"_action":{"$type":"NodeCanvas.Tasks.Actions.SetCurrentDoorActionTask"},"_position":{"x":3.943298,"y":621.2025},"_comment":"find
+    a door","$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"3"},{"_position":{"x":274.9433,"y":503.2025},"_comment":"approaching
     the door","$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"4"},{"_condition":{"valueA":{"_name":"goThrough","_targetVariableID":"493d9ff6-71e5-40e8-87fc-10a88553649d"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[System.Boolean,
-    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"_position":{"x":296.0,"y":673.0},"$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"5"},{"_condition":{"checkTarget":{"_name":"currentApproachPoint","_targetVariableID":"8a0bf526-0bae-4994-9675-9aca0096384f"},"checkType":1,"distance":{"_value":0.25},"$type":"NodeCanvas.Tasks.Conditions.CheckDistanceToGameObject"},"_position":{"x":339.0511,"y":768.8345},"_comment":"If
-    we''re too far from the door","$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"6"},{"_action":{"target":{"_name":"currentApproachPoint","_targetVariableID":"8a0bf526-0bae-4994-9675-9aca0096384f"},"speed":{"_value":2.0},"stopDistance":{"_value":0.1},"$type":"NodeCanvas.Tasks.Actions.MoveTowards"},"_position":{"x":544.0511,"y":676.8345},"_comment":"Move
-    closer to the door","$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"7"},{"_position":{"x":691.6302,"y":351.8345},"_comment":"trying
-    to get through the door","$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"8"},{"_action":{"$type":"NodeCanvas.Tasks.Actions.TryOpenDoorActionTask"},"_position":{"x":524.6302,"y":470.8345},"_comment":"try
-    open the door","$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"9"},{"_position":{"x":767.6302,"y":483.8345},"_comment":"","$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"10"},{"_condition":{"$type":"NodeCanvas.Tasks.Conditions.isDoorOpenConditionTask"},"_position":{"x":653.6302,"y":599.8345},"_comment":"if
-    door open","$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"11"},{"_action":{"valueA":{"_name":"goThrough","_targetVariableID":"493d9ff6-71e5-40e8-87fc-10a88553649d"},"valueB":{"_value":true},"$type":"NodeCanvas.Tasks.Actions.SetVariable`1[[System.Boolean,
-    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"_position":{"x":870.0,"y":612.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"12"},{"_action":{"target":{"_name":"currentExitPoint","_targetVariableID":"ebc38c55-561d-4e80-baab-9a8ec710e631"},"speed":{"_value":2.0},"stopDistance":{"_value":0.1},"$type":"NodeCanvas.Tasks.Actions.MoveTowards"},"_position":{"x":1038.63,"y":608.8345},"_comment":"Moving
-    through the door","$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"13"},{"repeaterMode":2,"repeatTimes":{"_value":1},"_position":{"x":438.0,"y":82.0},"$type":"NodeCanvas.BehaviourTrees.Repeater","$id":"14"}],"connections":[{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"4"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"8"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"4"},"_targetNode":{"$ref":"5"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"4"},"_targetNode":{"$ref":"6"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"4"},"_targetNode":{"$ref":"7"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"8"},"_targetNode":{"$ref":"9"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"8"},"_targetNode":{"$ref":"10"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"10"},"_targetNode":{"$ref":"11"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"10"},"_targetNode":{"$ref":"12"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"10"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"14"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}},"derivedData":{"repeat":true,"$type":"NodeCanvas.BehaviourTrees.BehaviourTree+DerivedSerializationData"}}'
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"_position":{"x":124.8922,"y":758.368},"$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"5"},{"_condition":{"checkTarget":{"_name":"currentApproachPoint","_targetVariableID":"8a0bf526-0bae-4994-9675-9aca0096384f"},"checkType":1,"distance":{"_value":3.0},"$type":"NodeCanvas.Tasks.Conditions.CheckDistanceToGameObject"},"_position":{"x":167.9433,"y":854.2025},"_comment":"If
+    we''re too far from the door","$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"6"},{"_action":{"target":{"_name":"currentApproachPoint","_targetVariableID":"8a0bf526-0bae-4994-9675-9aca0096384f"},"speed":{"_value":2.0},"stopDistance":{"_value":0.1},"$type":"NodeCanvas.Tasks.Actions.MoveTowards"},"_position":{"x":372.9433,"y":762.2025},"_comment":"Move
+    closer to the door","$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"7"},{"_position":{"x":623.5224,"y":432.2025},"_comment":"trying
+    to get through the door","$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"8"},{"_action":{"$type":"NodeCanvas.Tasks.Actions.TryOpenDoorActionTask"},"_position":{"x":456.5224,"y":551.2025},"_comment":"try
+    open the door","$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"9"},{"_position":{"x":816.4305,"y":515.4341},"$type":"NodeCanvas.BehaviourTrees.FlipSelector","$id":"10"},{"_position":{"x":705.2848,"y":580.0494},"_comment":"","$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"11"},{"_condition":{"$type":"NodeCanvas.Tasks.Conditions.isDoorOpenConditionTask"},"_position":{"x":499.5224,"y":692.2025},"_comment":"if
+    door open","$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"12"},{"_action":{"valueA":{"_name":"goThrough","_targetVariableID":"493d9ff6-71e5-40e8-87fc-10a88553649d"},"valueB":{"_value":true},"$type":"NodeCanvas.Tasks.Actions.SetVariable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"_position":{"x":680.892,"y":829.368},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"13"},{"_action":{"target":{"_name":"currentExitPoint","_targetVariableID":"ebc38c55-561d-4e80-baab-9a8ec710e631"},"speed":{"_value":2.0},"stopDistance":{"_value":0.1},"$type":"NodeCanvas.Tasks.Actions.MoveTowards"},"_position":{"x":831.522,"y":696.2025},"_comment":"Moving
+    through the door","$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"14"},{"_action":{"actions":[{"valueA":{"_name":"currentDoorIndex","_targetVariableID":"21349799-9e06-4516-8567-69611bb9b889"},"Operation":1,"valueB":{"_value":1},"$type":"NodeCanvas.Tasks.Actions.SetInt"},{"valueA":{"_name":"currentDoor","_targetVariableID":"9bdef99a-a589-4b30-983d-b0fbb53f2de2"},"valueB":{},"$type":"NodeCanvas.Tasks.Actions.SetVariable`1[[Door,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":983.0726,"y":593.9359},"_comment":"go
+    to \nnext door","$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"15"},{"repeaterMode":2,"repeatTimes":{"_value":1},"_position":{"x":438.0,"y":82.0},"$type":"NodeCanvas.BehaviourTrees.Repeater","$id":"16"}],"connections":[{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"4"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"8"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"4"},"_targetNode":{"$ref":"5"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"4"},"_targetNode":{"$ref":"6"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"4"},"_targetNode":{"$ref":"7"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"8"},"_targetNode":{"$ref":"9"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"8"},"_targetNode":{"$ref":"10"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"10"},"_targetNode":{"$ref":"11"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"10"},"_targetNode":{"$ref":"15"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"11"},"_targetNode":{"$ref":"12"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"11"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"11"},"_targetNode":{"$ref":"14"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"16"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}},"derivedData":{"repeat":true,"$type":"NodeCanvas.BehaviourTrees.BehaviourTree+DerivedSerializationData"}}'
   _boundGraphObjectReferences: []
   _boundGraphSource:
     _version: 3.25
     _category: 
     _comments: 
-    _translation: {x: -158, y: -224}
+    _translation: {x: -82, y: -208}
     _zoomFactor: 1
   _firstActivation: 0
   _enableAction: 0
@@ -1392,21 +1409,32 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7243590759136051307, guid: ac0133d3c0339ad4db55ec1618b0cb55, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ac0133d3c0339ad4db55ec1618b0cb55, type: 3}
 --- !u!4 &5062705883833684364 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2382743194373604211, guid: ac0133d3c0339ad4db55ec1618b0cb55, type: 3}
   m_PrefabInstance: {fileID: 5062705883833684363}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5062705883833684365 stripped
+--- !u!114 &5062705883833684365
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7243590759136051307, guid: ac0133d3c0339ad4db55ec1618b0cb55, type: 3}
-  m_PrefabInstance: {fileID: 5062705883833684363}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 883947367}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4b7b3bfc1782df4992f28507bb7e7cc, type: 3}
+  m_Script: {fileID: 11500000, guid: c5196da1de0af06489415beb59253164, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 5062705883833684366}
+  isOpen: 0
+  exitPoint: {fileID: 429558087}
+  approachPoint: {fileID: 1413696179}
+--- !u!95 &5062705883833684366 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6294043073209861014, guid: ac0133d3c0339ad4db55ec1618b0cb55, type: 3}
+  m_PrefabInstance: {fileID: 5062705883833684363}
+  m_PrefabAsset: {fileID: 0}
